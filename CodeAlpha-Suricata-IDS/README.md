@@ -53,9 +53,9 @@ Save and exit (CTRL+O, Enter, CTRL+X).
 Create or edit the local rules file:
 
 sudo nano /etc/suricata/rules/local.rules
-
+```
 Add your rules like:
-
+```
 alert icmp any any -> any any (msg:"ICMP Ping Detected"; sid:10001; rev:1;)
 alert tcp any any -> any 22 (msg:"Possible SSH Brute Force"; threshold:type threshold, track by_src, count 5, seconds 60; sid:10002; rev:1;)
 alert ip any any -> 45.67.89.10 any (msg:"Traffic to Blacklisted IP"; sid:10003; rev:1;)
@@ -124,15 +124,15 @@ Permissions issues with script?
 ```
 Confirm block_ip.sh is executable (chmod +x).
 ```
-## 🛡️ Disclaimer
+##  Disclaimer
 
 This project is for **educational and ethical** use only.  
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Umed Ali**  
-🎓 BS Cyber Security | 💻 Network Security Enthusiast  
+🎓 BS Cyber Security | Network Security Enthusiast  
 📍 Karachi, Pakistan  
 🔗 [LinkedIn](https://www.linkedin.com/in/ecstaticumed)
