@@ -1,0 +1,4 @@
+alert icmp any any -> any any (msg:"ICMP Ping Detected"; sid:10001; rev:1;)
+alert tcp any any -> any 22 (msg:"Possible SSH Brute Force"; threshold:type threshold, track by_src, count 5, seconds 60; sid:10002; rev:1;)
+alert ip any any -> 192.168.1.60 any (msg:"Malicious IP Access Detected"; sid:10003;)
+

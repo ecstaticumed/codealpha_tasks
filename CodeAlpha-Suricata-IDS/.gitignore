@@ -1,0 +1,18 @@
+# Ignore Suricata logs and runtime files
+/var/log/suricata/
+/run/suricata.pid
+/suricata.log
+
+# Ignore system files
+*.swp
+*.bak
+*.tmp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore any compiled scripts or binaries (if any)
+*.exe
+*.o
+*.out
