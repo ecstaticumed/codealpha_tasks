@@ -81,25 +81,23 @@ When suspicious activity is detected, you will see alerts like:
 ```
 01/21/2025-15:32:12 [**] ICMP Ping Detected [**] [Priority: 3] {ICMP} 192.168.1.5 -> 8.8.8.8
 ```
-```Response Mechanism - Automatic Blocking
-```
+Response Mechanism - Automatic Blocking
+
 1. Setup the blocking script
 ```
 Edit or create the script:
 
 sudo nano /usr/local/bin/block_ip.sh
-
 Paste:
 
 #!/bin/bash
 IP=$1
 ufw deny from $IP
 
-
 Save and exit.
-
+```
 Make the script executable:
-
+```
 sudo chmod +x /usr/local/bin/block_ip.sh
 ```
 Testing Your Setup
@@ -107,8 +105,6 @@ Testing Your Setup
 From another machine or terminal, run:
 
 ping <your Kali IP>
-
-
 You should see an alert for ICMP Ping in Suricata logs.
 
 Attempt multiple SSH connection attempts to trigger SSH brute force detection.
@@ -117,14 +113,26 @@ Troubleshooting
 ```
 No alerts appearing?
 Ensure Suricata is running on the correct network interface.
-
+```
 Script not blocking IPs?
-
+```
 Check UFW status:
 sudo ufw status
 Make sure UFW is active.
-
+```
 Permissions issues with script?
+```
 Confirm block_ip.sh is executable (chmod +x).
 ```
+## 🛡️ Disclaimer
 
+This project is for **educational and ethical** use only.  
+
+---
+
+## 👨‍💻 Author
+
+**Umed Ali**  
+🎓 BS Cyber Security | 💻 Network Security Enthusiast  
+📍 Karachi, Pakistan  
+🔗 [LinkedIn](https://www.linkedin.com/in/ecstaticumed)
