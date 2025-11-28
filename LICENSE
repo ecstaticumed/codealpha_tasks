@@ -1,0 +1,12 @@
+
+---
+
+### 💡 Why this structure  
+
+- It starts with a **clear title + short description** so visitors immediately understand what the repo is about. :contentReference[oaicite:1]{index=1}  
+- It gives an **overview** that explains the purpose and audience — important because README is usually the first thing people see. :contentReference[oaicite:2]{index=2}  
+- It includes a **projects list** so users can quickly browse what’s inside and understand each folder’s purpose.  
+- It provides **getting started / setup instructions** so someone can clone and run. :contentReference[oaicite:3]{index=3}  
+- It leaves placeholders for **usage examples**, **contributing**, **future work**, and **license** — good README files usually contain these to help maintainers and collaborators. :contentReference[oaicite:4]{index=4}  
+
+---
